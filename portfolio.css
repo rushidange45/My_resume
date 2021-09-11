@@ -1,0 +1,452 @@
+body{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
+.container{
+  width:650px ;
+  height: 800px;
+  background-color: gray;
+  margin: 9px auto;
+  display: flex;
+  position: relative;
+  }
+
+
+.leftside{
+  width:calc(650px - 400px);
+  height:800px;
+  overflow-y: hidden;
+  background-color:rgb(145, 144, 138);
+  padding:0px;
+  flex-shrink: 0;
+}
+img{
+  width:100%;
+  height: 280px;
+  margin: 0;
+}
+ #role{
+   font-size: 13px;
+   font-weight:normal;
+ 
+ }
+.basic_info{
+  padding: 5px;
+  /* box-shadow: 0 5px 5px -6px black; */
+  border-bottom: 1px dashed gray;
+}
+
+.skills, .social  {
+  padding:10px;
+}
+
+h2{
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 1px;
+}
+#role{
+  font-size: 13px;
+  font-weight: 100;
+}
+
+h3{
+  text-align: center;
+  padding: 0px;
+  margin: 2px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.skills, .social{
+  border-bottom:1px dashed gray ;
+  margin-top: 0px;
+}
+
+.NoOfSkills ul{
+  padding: 2px;
+  margin: 0px;
+}
+.NoOfSkills li{
+  list-style: none;
+  font-size: 13px;
+  padding: 2px;
+  
+}
+.NoOfSkills{
+  padding: 0px;
+}
+
+.social  ul, .NoOfSkills ul{
+  padding:5px;
+  margin:0px;
+}
+
+.social li{
+  list-style:none;
+
+}
+.social div{
+  margin-bottom: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+i{
+  padding-right:4px;
+  padding-left: 0px;
+  margin-left:5px;
+  
+}
+
+/*  styling Hobbies  */
+.hobbies ul{
+  display: flex;
+  justify-content: left;
+ justify-content: space-evenly;
+ padding-left:0px;
+
+}
+
+.hobbies li{
+  list-style: none; 
+}
+
+#hobbies{
+  margin-top:10px
+}
+
+
+/* css for right side */
+
+.righside{
+  margin-left: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  width:auto;
+  height:800px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+
+.projects p, .education p{
+  margin-bottom: 10px;
+  margin-top: 5px;
+  /* margin-left:20px; */
+  text-align:justify;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.education li,.projects li{
+  /* border-left: 1px inset rgb(158, 164, 169); */
+  list-style-position: inside;
+  list-style-type:circle;
+  border-top-left-radius: 10px;
+  /* border-style: inset; */
+   
+}
+
+.education ul,.projects ul{
+  padding-left:15px;
+  margin: 0;
+ 
+}
+
+.education, .projects{
+  border-bottom:1px dashed rgb(99, 96, 96) ;
+  margin-top: 0px;
+}
+
+
+/* media queries */
+
+@media screen and( max-width: 768px){
+  body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: lightgray;
+  }
+  
+  .container{
+    width:650px ;
+    height: 800px;
+    background-color: gray;
+    margin: 9px auto;
+    display: flex;
+    position: relative;
+    }
+  
+  
+  .leftside{
+    width:calc(650px - 400px);
+    height:800px;
+    overflow-y: hidden;
+    background-color:rgb(145, 144, 138);
+    padding:0px;
+    flex-shrink: 0;
+  }
+  img{
+    width:100%;
+    height: 280px;
+    margin: 0;
+  }
+   #role{
+     font-size: 13px;
+     font-weight:normal;
+   
+   }
+  .basic_info{
+    padding: 5px;
+    /* box-shadow: 0 5px 5px -6px black; */
+    border-bottom: 1px dashed gray;
+  }
+  
+  .skills, .social  {
+    padding:10px;
+  }
+  
+  h2{
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 1px;
+  }
+  #role{
+    font-size: 13px;
+    font-weight: 100;
+  }
+  
+  h3{
+    text-align: center;
+    padding: 0px;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  .skills, .social{
+    border-bottom:1px dashed gray ;
+    margin-top: 0px;
+  }
+  
+  .social  ul, .NoOfSkills ul{
+    padding:5px;
+    margin:0px;
+  }
+  
+  .social li{
+    list-style:none;
+  
+  }
+  .social div{
+    margin-bottom: 5px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .NoOfSkills ul{
+    padding: 2px;
+    margin: 0px;
+  }
+  .NoOfSkills li{
+    list-style: none;
+    font-size: 13px;
+    padding: 2px;
+    
+  }
+  .NoOfSkills{
+    padding: 0px;
+  }
+  
+  i{
+    padding-right:4px;
+    padding-left: 0px;
+    margin-left:5px;
+    
+  }
+  
+  /*  styling Hobbies  */
+  .hobbies ul{
+    display: flex;
+    justify-content: left;
+   justify-content: space-evenly;
+   padding-left:0px;
+  
+  }
+  
+  .hobbies li{
+    list-style: none; 
+  }
+  
+  #hobbies{
+    margin-top:10px
+  }
+  
+  
+  /* css for right side */
+  
+  .righside{
+    margin-left: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width:auto;
+    height:800px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+  
+  
+  .projects p, .education p{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left:40px;
+    text-align:justify;
+    box-sizing: border-box;
+  }
+  
+  .education li,.projects li{
+    border-left: 2px solid rgb(144, 148, 151);
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left:15px;
+    
+  }
+  
+  .education ul,.projects ul{
+    
+    margin: 0;
+   
+  }
+  
+  .education, .projects{
+    border-bottom:1px dashed rgb(99, 96, 96) ;
+    margin-top: 0px;
+  }
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+  animation: mymove 3s infinite;
+}
+@keyframes mymove {
+  from {
+    background-color: rgb(85, 232, 66);
+  }
+  to {
+    background-color: rgb(28, 23, 23);
+  }
+} */ 
+/* * {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  background-color: black;
+  height: 40px;
+  padding: 0;
+  margin: 0px;
+
+  list-style: none;
+}
+li {
+  margin: 0px;
+  width: 80px;
+  padding: 0 8px 0 8px;
+  height: inherit;
+  border-right: 1px solid red;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+li:hover {
+  background-color: lightgray;
+}
+
+.active li {
+  background-color: black;
+} */
+/* 
+header {
+  background-color: cadetblue;
+  height: 45px;
+}
+
+Li {
+  padding: 8px 5px;
+  position: relative;
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+#home {
+  position: absolute;
+  margin-left: 310px;
+}
+.one {
+  position: absolute;
+  margin-left: 370px;
+}
+#t {
+  position: absolute;
+  margin-left: 450px;
+} */
+
+/* css is case insensitive if you are doing css for the tags and case sensitive for class and id's
